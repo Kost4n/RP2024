@@ -63,12 +63,12 @@ function adjustSlider() {
     if (sliderWidth < 769) {
         slide1.style.width = '100%';
         slide2.style.width = '0';
-        slide2.style.visibility = 'hidden';
+        slide2.style.display = 'none';
         document.querySelector('.slides').style.display = 'block';
     } else {
         slide1.style.width = '50%';
         slide2.style.width = '50%';
-        slide2.style.visibility = 'visible';
+        slide2.style.display = 'block';
         document.querySelector('.slides').style.display = 'flex';
     }
 }
