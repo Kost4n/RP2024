@@ -19,34 +19,6 @@
 .cell img {
     width: 500px;
 }
-
-.infographic {
-    display: flex;
-    align-items: center;
-  }
-  
-  .info-icon {
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
-  }
-  
-  .info-icon img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .info-data {
-    margin-left: 20px;
-  }
-  
-  @keyframes milkAnimation {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.2); }
-    100% { transform: scale(1); }
-  }
-
 .slider {
   margin: 10px 50px;
   position: relative;
@@ -61,6 +33,21 @@
   flex: 0 0 50%; /* Половина ширины страницы */
   position: relative;
   margin: 0 20px;
+}
+@media (max-width: 770px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .cell img {
+    width: 300px;
+    margin: 10px 0;
+  }
+
+  .sl-im {
+    height: auto;
+  }
+
 }
 
 .sl-im {
@@ -123,3 +110,4 @@
       top: 60%;
   }
 }
+
