@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подача заявления</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-reg.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/logo.png" alt=""></a>
+        <h3>Подача заявления</h3>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="send-req.html">Подать заявление</a></li>
+                <li><a href="profile.html">Профиль</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="center">
+        <form id="sendReqForm">
+            <input id="date" type="date" placeholder="Дата" required>
+            <input id="amount" min="10" type="number" placeholder="Количество молока"
+                style="margin-bottom: 0px;" required>
+            <p style="font-size: 11px; color: #444444;" id="costСalculation">
+                Стоимость молока, учитывая количество: 0 рублей</p>
+            <input id="city" type="text" placeholder="Город"
+                style="margin-top: 5px;" required>
+            <input id="street" type="text" placeholder="Улица" required>
+            <input id="houseNumber" type="number" placeholder="Номер дома" required>
+            <select id="selectType">
+                <option value="req1">Покупка</option>
+                <option value="req2">Продажа</option> 
+              </select>
+            <button id="send" type="button">Подать заявление</button>
+        </form>
+    </div>
+    <footer class="site-footer">
+        <div class="footer-column">
+            <h2>Практика, 2024</h2>
+        </div>
+        <div class="footer-column">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="send-req.html">Подать заявление</a></li>
+                    <li><a href="profile.html">Профиль</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-column">
+            <h3>Контакты</h3>
+            <p>Телефон: <a href="#">123-456-7890</a></p>
+            <p>Email: <a href="#">moloko@example.com</a></p>
+        </div>
+        <div class="footer-column">
+            <h3>Правовая документация</h3>
+            <ul>
+                <li><a href="#">Политика конфиденциальности</a></li>
+                <li><a href="#">Пользовательское соглашение</a></li>
+            </ul>
+        </div>
+    </footer>
+<script src="script-req.js"></script>
+</body>
+</html>

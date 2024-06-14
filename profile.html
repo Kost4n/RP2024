@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-profile.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/logo.png" alt=""></a>
+        <h3>Профиль</h3>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="send-req.html">Подать заявление</a></li>
+                <li><a href="profile.html">Профиль</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="center">
+       <div>
+        <h3 style="margin-top: 15px;">Личные данные</h3>
+        <div id="personal" class="elem">
+            <div class="row">
+                <div class="column">
+                    <p id="surname">Фамилия: Иванов</p>
+                    <p id="name">Имя: Иван</p>
+                    <p id="patronymic">Отчество Иванович</p>
+                </div>
+                <div class="column">
+                    <p id="phone">Номер телефона: +79999999999</p>
+                    <a href="#">Изменить</a>                        
+                </div>
+            </div>
+            <button id="btn-out" type="button">Выйти из личного кабинета</button>
+        </div>
+       </div>
+       <div id="history">
+        <h3 style="margin-top: 15px;">История заявок</h3>
+       </div>
+    </div>
+    <footer class="site-footer">
+        <div class="footer-column">
+            <h2>Практика, 2024</h2>
+        </div>
+        <div class="footer-column">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="send-req.html">Подать заявление</a></li>
+                    <li><a href="profile.html">Профиль</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-column">
+            <h3>Контакты</h3>
+            <p>Телефон: <a href="#">123-456-7890</a></p>
+            <p>Email: <a href="#">moloko@example.com</a></p>
+        </div>
+        <div class="footer-column">
+            <h3>Правовая документация</h3>
+            <ul>
+                <li><a href="#">Политика конфиденциальности</a></li>
+                <li><a href="#">Пользовательское соглашение</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script-profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+.row {
+    margin-top: 20px;
+    display: flex;
+}
+
+.cell {
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 50%;
+    text-align: center;
+}
+
+.cell p {
+    margin: auto;
+    width: 400px;
+    font-size: 24px;
+}
+
+.cell img {
+    width: 500px;
+}
+
+.infographic {
+    display: flex;
+    align-items: center;
+  }
+  
+  .info-icon {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+  }
+  
+  .info-icon img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .info-data {
+    margin-left: 20px;
+  }
+  
+  @keyframes milkAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+
+.slider {
+  margin: 10px 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+}
+
+.slide {
+  flex: 0 0 50%; /* Половина ширины страницы */
+  position: relative;
+  margin: 0 20px;
+}
+
+.sl-im {
+  width: 100%;
+  height: 450px;
+}
+
+.btn-ch{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  background-color: #333;
+  color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.slide p {
+  color: white;
+  position: absolute;
+  top: 70%;
+  background: #00000094;
+  padding: 10px;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .slide p {
+      position: absolute;
+      top: 60%;
+  }
+}
+
+@media (max-width: 770px) {
+  .slide p {
+      position: absolute;
+  }
+}
+
+@media (max-width: 430px) {
+  .slide p {
+      font-size: 14px;
+      position: absolute;
+      top: 60%;
+  }
+}
+
+@media (max-width: 330px) {
+  .slide p {
+      position: absolute;
+      top: 60%;
+  }
+}
